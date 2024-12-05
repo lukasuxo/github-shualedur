@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brand-name {
+  color: #222731;
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#search-input {
+  background-color: #f6f8ff;
+}
+
+.header-container {
+  display: flex;
+  gap: 524px;
+}
+
+.theme-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.theme-label {
+  color: #697c9a;
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+}
+
+.theme-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 350px;
+}
+
+.search-wrapper input {
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  color: #333;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-wrapper input::placeholder {
+  color: #c4c4c4;
+}
+
+.search-wrapper button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-wrapper button:hover {
+  background-color: #0056b3;
+}
+
+.profile-section {
+  width: 730px;
+  height: 419px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fefefe;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  padding: 40px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#formmain {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.avatar-img {
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+  border-radius: 70px;
+}
+
+.profile-section {
+  display: flex;
+  gap: 30px;
+}
+
+.profile-name {
+  color: #2b3442;
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-username {
+  color: #0079ff;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.join-label {
+  color: #697c9a;
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info-header {
+  display: flex;
+  gap: 136px;
+}
+
+.bio-text {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-box {
+  position: relative;
+  top: 30px;
+  width: 480px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f6f8ff;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.stat-title {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stat-value {
+  color: #2b3442;
+  font-family: "Space Mono";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contact-section {
+  display: flex;
+  gap: 120px;
+  padding-top: 57px;
+}
+
+.contact-text {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+}
+
+body.dark-mode {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+body.dark-mode .profile-section {
+  background-color: #1e2a47;
+}
+
+body.dark-mode .join-label,
+body.dark-mode .bio-text,
+body.dark-mode .contact-text,
+body.dark-mode .profile-name,
+body.dark-mode .stat-title,
+body.dark-mode .stat-value {
+  color: #ffffff;
+}
+
+body.dark-mode #search-input {
+  background-color: #ffffff;
+}
+
+body.dark-mode .stats-box {
+  background-color: #141d2f;
+}
+
+body.dark-mode .brand-name {
+  color: white;
+}
+
+body.dark-mode #searchinput {
+  color: white;
+}
+body.dark-mode .search-wrapper {
+  background: #1e2a47;
+}
