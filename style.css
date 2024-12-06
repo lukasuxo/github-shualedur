@@ -333,7 +333,7 @@ body.dark-mode .search-wrapper {
 
   .stats-box {
     position: relative;
-    top: -110px;
+    top: -90px;
     width: 100%;
     align-items: stretch;
     gap: 15px;
@@ -364,7 +364,7 @@ body.dark-mode .search-wrapper {
   .bio-text {
     font-size: 14px;
     position: relative;
-    top: -120px;
+    top: -100px;
     left: 20px;
   }
 
