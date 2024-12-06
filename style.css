@@ -282,6 +282,9 @@ body.dark-mode .search-wrapper {
     padding: 20px;
     overflow: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .header-container {
