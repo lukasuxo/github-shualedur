@@ -276,7 +276,7 @@ body.dark-mode .search-wrapper {
   background: #1e2a47;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 540px) {
   body {
     height: auto;
     padding: 20px;
@@ -290,13 +290,10 @@ body.dark-mode .search-wrapper {
   }
 
   .theme-switch {
-    justify-content: center;
     gap: 5px;
-    display: flex;
   }
 
   .search-wrapper {
-    display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
@@ -305,7 +302,6 @@ body.dark-mode .search-wrapper {
 
   .search-wrapper input {
     width: 100%;
-    display: flex;
   }
 
   .search-wrapper button {
@@ -314,36 +310,39 @@ body.dark-mode .search-wrapper {
   }
 
   .profile-section {
-    align-items: center;
+    flex-direction: column;
     width: 100%;
     padding: 20px;
   }
 
   .avatar-img {
-    position: relative;
-    top: -137px;
     width: 80px;
     height: 80px;
   }
 
   .info-header {
-    display: flex;
-    gap: 10px;
+    position: relative;
+    top: -110px;
+    left: 100px;
+    overflow: hidden;
   }
 
   .stats-box {
-    width: 100%;
     position: relative;
-    left: -70px;
+    top: -110px;
     width: 100%;
-    gap: 50px;
+    align-items: stretch;
+    gap: 15px;
     padding: 20px;
   }
 
   .contact-section {
     position: relative;
-    left: -77px;
-    gap: 30 px;
+    top: -100px;
+    left: 10px;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 20px;
   }
 
   .contact-row {
@@ -352,7 +351,6 @@ body.dark-mode .search-wrapper {
 
   .profile-name {
     font-size: 22px;
-    display: flex;
   }
 
   .profile-username {
@@ -361,6 +359,9 @@ body.dark-mode .search-wrapper {
 
   .bio-text {
     font-size: 14px;
+    position: relative;
+    top: -120px;
+    left: 20px;
   }
 
   .join-label {
